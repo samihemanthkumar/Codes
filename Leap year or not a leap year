@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main(){
+int T, N;
+scanf("%"d, &T);
+for(int i=0;i<T;i++){
+  scanf("%"d, &N);
+  if(N%400==0)
+    printf("Yes, leap year\n);
+  else if(N%100==0)
+    printf("No, Not a leap year\n);
+  else if(N%4==0)
+    printf("Yes, leap year\n);
+  else
+    printf("No, Not a leap year\n);
+  return 0;
+}
