@@ -1,3 +1,4 @@
+C
 #include<stdio.h>
 unsigned int reverseBits(unsigned int num) {
    	int rev = 0;
@@ -12,3 +13,24 @@ unsigned int reverseBits(unsigned int num) {
     return rev;
     printf("%d",num);
 }
+
+C++
+#include<iostream>
+using namespace std;
+
+class Solution {
+public:
+    unsigned int reverseBits(unsigned int num) {
+   	int rev=0;
+   	cin>>num;
+    while(num>0)
+        {
+            rev <<=1;
+            if((int)(num&1) == 1)
+                rev ^=1;
+            num >>= 1;
+        }
+    return rev;
+    cout<<num;
+}      
+};
